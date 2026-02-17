@@ -6,6 +6,9 @@
     <title>Teste de imagem de fundo</title>
     
     <style>
+        body{
+            background-image: url('imagens/wallpaper002.jpg') ;
+        }
         div.quadrado {
             display: inline-block; /* Faz com que as caixar fiquem enfileiradas,uma ao lado da outra */
             border: 2px solid black; /* Grossura da borda para fora da figura,como se fosse um espaçamento. */
@@ -14,17 +17,31 @@
             width: 300px;
             height: 300px;
         }
+
+
+        div#q1{
+            background-color: skyblue;
+        }
+        div#q2{
+            background-image: linear-gradient(to
+            bottom, yellow, red);
+            
+        }
+        div#q3{
+            background-image: url('imagens/wallpaper001.jpg');
+
+        }
     </style>
 
 </head>
 <body>
-    <div class="quadrado">
+    <div class="quadrado" id="q1">
         
     </div>
-    <div class="quadrado">
+    <div class="quadrado" id="q2">
 
     </div>
-    <div class="quadrado">
+    <div class="quadrado" id="q3">
 
     </div>
 </body>
