@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de degradê CSS</title>
     <style>
+        body{
+            background-size: auto;
+            background-image: url('imagens/wallpaper003.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        
+        div.quadrado{
+            display: inline-block;
+            
+        }
         div#q5{
             background-image: linear-gradient(to right ,yellow , red);
             border: solid black;
@@ -13,11 +24,21 @@
             border-radius: 10px;
 
         }
+        div#q6{
+            background-image: url('imagens/pattern002.png');
+            border: solid powderblue;
+            width: 400px;
+            height: 400px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     
     <div class="quadrado" id="q5">
+
+    </div>
+    <div class="quadrado" id="q6">
 
     </div>
 </body>
