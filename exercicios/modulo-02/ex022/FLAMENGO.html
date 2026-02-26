@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Glassmorphism</title>
+    
+    <style>
+        /* CONFIGURAÇÃO DA TELA (O Fundo) */
+        body {
+            margin: 0;
+            height: 100vh;
+            
+            /* Usamos o Flexbox aqui só para centralizar o cartão bem no meio do seu monitor */
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            
+            /* Puxando a imagem que você já tem na pasta */
+            background-image: url('imagens/wallpaper002.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* A MÁGICA DO VIDRO FOSCO */
+        .cartao-vidro {
+            width: 350px;
+            padding: 30px;
+            text-align: center;
+            color: white; /* Texto branco destaca bem em fundos escuros/vidro */
+            
+            /* INGREDIENTE 1: Cor de fundo quase transparente (10% de branco) */
+            background-color: rgba(255, 255, 255, 0.1);
+            
+            /* INGREDIENTE 2: O Desfoque (O verdadeiro segredo do Glassmorphism) */
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px); /* Garante que funcione em navegadores da Apple */
+            
+            /* INGREDIENTE 3: Bordinha fina simulando o corte do vidro e uma sombra para flutuar */
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Estética básica para o texto ficar bonitão */
+        .cartao-vidro h1 {
+            margin-top: 0;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Sombra no texto ajuda na leitura */
+        }
+        
+        .cartao-vidro p {
+            line-height: 1.6;
+            font-size: 15px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cartao-vidro">
+        <h1>Espada de Duas Mãos</h1>
+        <p>Uma arma pesada forjada em aço puro. Note como o efeito de vidro embaça a imagem lá no fundo, permitindo que você leia esta descrição perfeitamente sem perder o visual incrível do cenário.</p>
+    </div>
+
+</body>
+</html>
