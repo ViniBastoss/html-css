@@ -1,5 +1,7 @@
 @charset "UTC-8";
 
+
+
 /*p{
     white-space: pre-line;
 }*/
@@ -45,6 +47,7 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: "Passion One", sans-serif; /* A mágica acontece aqui! */
 }
 
 section.normal{
